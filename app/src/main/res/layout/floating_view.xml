@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_custom_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:floatingMenuActionButton="http://schemas.android.com/tools">
+    <rjsv.floatingmenu.floatingmenubutton.FloatingMenuButton
+        android:id="@+id/my_floating_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerInside"
+        floatingMenuActionButton:anchored="false"
+        floatingMenuActionButton:animationType="radial"
+        floatingMenuActionButton:dispositionEndAngle="360"
+        floatingMenuActionButton:dispositionStartAngle="0"
+        floatingMenuActionButton:subActionButtonRadius="100">
+
+        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+            android:id="@+id/sub_button_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/defaultimage" />
+
+        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+            android:id="@+id/sub_button_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/defaultimage" />
+
+        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+            android:id="@+id/sub_button_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/defaultimage" />
+
+        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+            android:id="@+id/sub_button_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/defaultimage" />
+
+        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+            android:id="@+id/sub_button_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/defaultimage" />
+
+    </rjsv.floatingmenu.floatingmenubutton.FloatingMenuButton>
+</LinearLayout>

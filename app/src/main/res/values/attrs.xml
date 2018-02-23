@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Landscape">
+        <attr name="sky" format="color"/>
+        <attr name="sun" format="color"/>
+        <attr name="highGround" format="color"/>
+        <attr name="towerBack" format="color"/>
+        <attr name="towerFront" format="color"/>
+        <attr name="mountain" format="color"/>
+        <attr name="land" format="color"/>
+        <attr name="iceTop" format="color"/>
+        <attr name="unknown" format="color"/>
+        <attr name="houseBack" format="color"/>
+        <attr name="windowUpper" format="color"/>
+        <attr name="houseRoofFront" format="color"/>
+        <attr name="houseRoofBack" format="color"/>
+        <attr name="windowLower" format="color"/>
+        <attr name="houseBeamFirstBack" format="color"/>
+        <attr name="towerRoofFront" format="color"/>
+        <attr name="towerRoofBack" format="color"/>
+        <attr name="houseBeamSecondBack" format="color"/>
+        <attr name="houseBeamThirdBack" format="color"/>
+        <attr name="houseWallFront" format="color"/>
+        <attr name="houseBeamSecondFront" format="color"/>
+        <attr name="houseBeamFirstFront" format="color"/>
+        <attr name="path" format="color"/>
+        <attr name="mountainShadow" format="color"/>
+        <attr name="treeSecond" format="color"/>
+        <attr name="treeThird" format="color"/>
+        <attr name="treeFourth" format="color"/>
+        <attr name="treeFirst" format="color"/>
+    </declare-styleable>
+</resources>

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
@@ -96,7 +97,5 @@ public class BatteryPercentage extends LinearLayout{
         getContext().registerReceiver(hidePercentageReceiver, hidePercentageFilter);
         getContext().registerReceiver(hideProgressReceiver, hideProgressFilter);
     }
-
-
 
 }

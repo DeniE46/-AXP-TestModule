@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -9,95 +9,99 @@
 
 
 
-    <!--<com.denie.axp.StartNotesButton-->
-        <!--android:id="@+id/start_notes_button"-->
-        <!--android:text="Notes"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--tools:ignore="HardcodedText,RtlHardcoded"-->
-        <!--android:background="@drawable/btn_notification_bg"-->
-        <!--android:layout_width="270dp"-->
-        <!--android:layout_height="50dp">-->
-        <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-            <!--android:id="@+id/relative_notes_layout">-->
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--app:srcCompat="@drawable/icon_notes"-->
-                <!--android:id="@+id/image_notes" />-->
-
-            <!--<TextView-->
-                <!--android:text="New Note"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:id="@+id/text_notes"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:layout_centerVertical="true"-->
-                <!--android:layout_marginStart="30dp"-->
-                <!--android:layout_toEndOf="@+id/image_notes"-->
-                 <!--/>-->
-        <!--</RelativeLayout>-->
-    <!--</com.denie.axp.StartNotesButton>-->
-
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/custom_parent"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content">-->
-    <!--<com.denie.axp.StartSketchesButton-->
-        <!--android:id="@+id/start_sketches_button"-->
-        <!--android:text="Sketches"-->
-        <!--android:textColor="@android:color/white"-->
-        <!--tools:ignore="HardcodedText,NotSibling,RtlHardcoded"-->
-        <!--android:background="@drawable/btn_notification_bg"-->
-        <!--android:layout_width="270dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentEnd="true">-->
-
-        <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:id="@+id/relative_sketches_layout">-->
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--app:srcCompat="@drawable/icon_sketch"-->
-                <!--android:id="@+id/image_sketch" />-->
-
-            <!--<TextView-->
-                <!--android:text="New Sketch"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:id="@+id/text_sketch"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:layout_centerVertical="true"-->
-                <!--android:layout_marginStart="30dp"-->
-                <!--android:layout_toEndOf="@+id/image_sketch" />-->
-        <!--</RelativeLayout>-->
-
-        <!--</com.denie.axp.StartSketchesButton>-->
-    <!--</RelativeLayout>-->
-
-
-
-    <!--<Button-->
-        <!--android:id="@+id/button"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Button" />-->
-
-    <!--<com.denie.axp.batterylevel.BatteryPercentage-->
-        <!--android:id="@+id/battery_view"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textColor="@color/colorAccent">-->
-    <!--</com.denie.axp.batterylevel.BatteryPercentage>-->
-
-    <com.denie.axp.shortcutscroller.Scroller
+    <com.denie.axp.StartNotesButton
+        android:id="@+id/start_notes_button"
+        android:text="Notes"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:background="@drawable/btn_notification_bg"
+        android:layout_width="270dp"
+        android:layout_height="50dp">
+        <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+            android:id="@+id/relative_notes_layout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon_notes"
+                android:id="@+id/image_notes" />
 
-    </com.denie.axp.shortcutscroller.Scroller>
+            <TextView
+                android:text="New Note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_notes"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/image_notes"
+                 />
+        </RelativeLayout>
+    </com.denie.axp.StartNotesButton>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/custom_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <com.denie.axp.StartSketchesButton
+        android:id="@+id/start_sketches_button"
+        android:text="Sketches"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText,NotSibling,RtlHardcoded"
+        android:background="@drawable/btn_notification_bg"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_sketches_layout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon_sketch"
+                android:id="@+id/image_sketch" />
+
+            <TextView
+                android:text="New Sketch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_sketch"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/image_sketch" />
+        </RelativeLayout>
+
+        </com.denie.axp.StartSketchesButton>
+    </RelativeLayout>
+
+    <com.denie.axp.batterylevel.BatteryPercentage
+        android:id="@+id/battery_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="80dp">
+    </com.denie.axp.batterylevel.BatteryPercentage>
+
+    <com.denie.axp.floatingmenu.FloatingView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="100dp"
+        >
+
+    </com.denie.axp.floatingmenu.FloatingView>
+
+    <com.denie.axp.dynamicBackground.BackgroundView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="200dp">
+
+    </com.denie.axp.dynamicBackground.BackgroundView>
+
+</FrameLayout>

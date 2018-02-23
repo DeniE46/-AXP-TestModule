@@ -8,4 +8,68 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="DayLight">
+        <item name="sky">#d5e9f1</item>
+        <item name="sun">#fce758</item>
+        <item name="highGround">#9da686</item>
+        <item name="towerBack">#ba955a</item>
+        <item name="towerFront">#e9b96e</item>
+        <item name="mountain">#cccccc</item>
+        <item name="land">#445827</item>
+        <item name="iceTop">#ffffff</item>
+        <item name="unknown">#e9b96e</item>
+        <item name="houseBack">#c17d11</item>
+        <item name="windowUpper">#000000</item>
+        <item name="houseRoofFront">#cc0000</item>
+        <item name="houseRoofBack">#a40000</item>
+        <item name="windowLower">#000000</item>
+        <item name="houseBeamFirstBack">#e9b96e</item>
+        <item name="towerRoofFront">#cc0000</item>
+        <item name="towerRoofBack">#a40000</item>
+        <item name="houseBeamSecondBack">#e9b96e</item>
+        <item name="houseBeamThirdBack">#e9b96e</item>
+        <item name="houseWallFront">#c07d11</item>
+        <item name="houseBeamSecondFront">#cf9231</item>
+        <item name="houseBeamFirstFront">#cf9231</item>
+        <item name="path">#8f5902</item>
+        <item name="mountainShadow">#b2b2b2</item>
+        <item name="treeSecond">#445827</item>
+        <item name="treeThird">#445827</item>
+        <item name="treeFourth">#445827</item>
+        <item name="treeFirst">#445827</item>
+    </style>
+
+    <style name="NightLight" parent="DayLight">
+        <item name="sky">#0c4961</item>
+        <item name="sun">#fff4a7</item>
+        <item name="highGround">#515644</item>
+        <item name="towerBack">#635033</item>
+        <item name="towerFront">#78603b</item>
+        <item name="mountain">#484848</item>
+        <item name="land">#293518</item>
+        <item name="iceTop">#979797</item>
+        <item name="unknown">#5e4a2b</item>
+        <item name="houseBack">#513507</item>
+        <item name="windowUpper">#ffd900</item>
+        <item name="houseRoofFront">#690000</item>
+        <item name="houseRoofBack">#4d0000</item>
+        <item name="windowLower">#ffd900</item>
+        <item name="houseBeamFirstBack">#564428</item>
+        <item name="towerRoofFront">#6c0000</item>
+        <item name="towerRoofBack">#2d0000</item>
+        <item name="houseBeamSecondBack">#5b482b</item>
+        <item name="houseBeamThirdBack">#5b482b</item>
+        <item name="houseWallFront">#5c3c07</item>
+        <item name="houseBeamSecondFront">#5b482b</item>
+        <item name="houseBeamFirstFront">#5b482b</item>
+        <item name="path">#5b482b</item>
+        <item name="mountainShadow">#515151</item>
+        <item name="treeSecond">#202912</item>
+        <item name="treeThird">#202912</item>
+        <item name="treeFourth">#202912</item>
+        <item name="treeFirst">#202912</item>
+    </style>
+
+
+
 </resources>
