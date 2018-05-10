@@ -1,20 +1,23 @@
 package com.denie.axp;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
 public class StartSketchesButton extends FrameLayout implements OnClickListener{
 
-    String AppPackage = "com.sonymobile.sketch";
+    String appPackage = "com.sonymobile.sketch";
     PackageManager pm = getContext().getPackageManager();
+
+
     public StartSketchesButton(Context context) {
         super(context);
         init();
@@ -33,15 +36,37 @@ public class StartSketchesButton extends FrameLayout implements OnClickListener{
 
     public void init(){
       setOnClickListener(this);
+        IntentFilter intentFilter = new IntentFilter("SET_BUTTONS_VISIBILITY");
+        getContext().registerReceiver(broadcastReceiver, intentFilter);
     }
+
+    BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            int mode = intent.getIntExtra("State", 0);
+            switch(mode){
+                case 0:
+                    setVisibility(GONE);
+                    break;
+                case 1:
+                    setVisibility(VISIBLE);
+                    break;
+                case 4:
+                    appPackage = "com.axp.denis.axppanel";
+                    break;
+                case 5:
+                    appPackage = "com.sonymobile.sketch";
+                    break;
+            }
+        }
+    };
+
 
     @Override
     public void onClick(View view) {
         StartSketches();
         CloseNotificationPanel();
     }
-
-
 
 
     public void CloseNotificationPanel(){
@@ -51,8 +76,8 @@ public class StartSketchesButton extends FrameLayout implements OnClickListener{
 
 
     public void StartSketches(){
-        if(IsPackageInstalled(AppPackage, pm)) {
-            Intent intent = getContext().getPackageManager().getLaunchIntentForPackage(AppPackage);
+        if(IsPackageInstalled(appPackage, pm)) {
+            Intent intent = getContext().getPackageManager().getLaunchIntentForPackage(appPackage);
             getContext().startActivity(intent);
         }
         else{

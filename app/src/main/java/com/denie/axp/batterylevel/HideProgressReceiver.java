@@ -4,9 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-/**
- * Created by DeniE46 on 1/2/2018.
- */
 
 public class HideProgressReceiver extends BroadcastReceiver {
 

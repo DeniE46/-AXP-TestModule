@@ -1,7 +1,7 @@
 package com.denie.axp;
 
 /**
- * Created by DeniE46 on 12/5/2017.
+ * Created on 12/5/2017.
  */
 
 public class SetNotesVisibility {

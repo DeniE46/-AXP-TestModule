@@ -15,37 +15,22 @@
         floatingMenuActionButton:animationType="radial"
         floatingMenuActionButton:dispositionEndAngle="360"
         floatingMenuActionButton:dispositionStartAngle="0"
-        floatingMenuActionButton:subActionButtonRadius="100">
-
-        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
-            android:id="@+id/sub_button_1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/defaultimage" />
-
-        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
-            android:id="@+id/sub_button_2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/defaultimage" />
-
-        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
-            android:id="@+id/sub_button_3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/defaultimage" />
-
-        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
-            android:id="@+id/sub_button_4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/defaultimage" />
-
-        <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
-            android:id="@+id/sub_button_5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/defaultimage" />
+        floatingMenuActionButton:subActionButtonRadius="100"
+        android:background="@drawable/icon_notes">
 
     </rjsv.floatingmenu.floatingmenubutton.FloatingMenuButton>
+
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/defaultimage"
+        android:onClick="test"/>
+
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/defaultimage"
+        android:onClick="appOne"/>
 </LinearLayout>

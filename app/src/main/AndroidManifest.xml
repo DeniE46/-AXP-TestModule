@@ -29,6 +29,9 @@
             android:enabled="true"
             android:exported="true" />
 
+        <activity
+            android:name=".ControlPanelActivity"
+            android:label="@string/title_activity_control_panel"></activity>
     </application>
 
 </manifest>

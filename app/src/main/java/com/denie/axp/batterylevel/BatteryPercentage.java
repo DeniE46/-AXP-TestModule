@@ -91,11 +91,10 @@ public class BatteryPercentage extends LinearLayout{
         });
 
         IntentFilter batteryChangedFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-        IntentFilter hidePercentageFilter = new IntentFilter("HIDE_NOTES_BUTTON");
+        IntentFilter hidePercentageFilter = new IntentFilter("HIDE_PERCENTAGE_VIEW");
         IntentFilter hideProgressFilter = new IntentFilter("HIDE_PROGRESS_VIEW");
         getContext().registerReceiver(batteryBroadcastReceiver, batteryChangedFilter);
         getContext().registerReceiver(hidePercentageReceiver, hidePercentageFilter);
         getContext().registerReceiver(hideProgressReceiver, hideProgressFilter);
     }
-
 }

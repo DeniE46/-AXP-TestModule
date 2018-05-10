@@ -13,13 +13,10 @@ import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.view.ContextThemeWrapper;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.denie.axp.R;
 
-/**
- * Created by DeniE46 on 2/19/2018.
- */
+
 
 public class BackgroundView extends RelativeLayout {
     public BackgroundView(Context context) {
@@ -43,8 +40,9 @@ public class BackgroundView extends RelativeLayout {
 
     }
 
+    @SuppressLint("RestrictedApi")
     void initReceiver(){
-        final ContextThemeWrapper wrapper = new ContextThemeWrapper(getContext(), R.style.DayLight);
+        @SuppressLint("RestrictedApi") final ContextThemeWrapper wrapper = new ContextThemeWrapper(getContext(), R.style.DayLight);
         changeTheme(wrapper.getTheme());
         if(broadcastReceiver != null){
             IntentFilter intentFilter = new IntentFilter("CHANGE_WALL");
@@ -53,11 +51,12 @@ public class BackgroundView extends RelativeLayout {
     }
 
         BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+            @SuppressLint("RestrictedApi")
             @Override
             public void onReceive(Context context, Intent intent) {
                 int mode = intent.getIntExtra("Value", 0);
                 if(mode == 0){
-                    final ContextThemeWrapper wrapper = new ContextThemeWrapper(getContext(), R.style.DayLight);
+                    @SuppressLint("RestrictedApi") final ContextThemeWrapper wrapper = new ContextThemeWrapper(getContext(), R.style.DayLight);
                     changeTheme(wrapper.getTheme());
                 }
                 else{
